@@ -12,7 +12,7 @@
 
  //Root Route 
  app.get("/", (req, res) => {
-  "Welcome to my API"
+  res.send("Welcome to my API")
  })
 
  //ROUTES
