@@ -10,6 +10,11 @@
  dotenv.config()
  app.use(morgan("dev"))
 
+ //Root Route 
+ app.get("/", (req, res) => {
+  "Welcome to my API"
+ })
+
  //ROUTES
 app.use("/api/product", productRouter)
 
